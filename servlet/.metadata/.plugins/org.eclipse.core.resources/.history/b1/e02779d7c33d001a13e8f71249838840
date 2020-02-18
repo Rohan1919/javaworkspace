@@ -1,0 +1,39 @@
+package com.lti.login;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class UserService {
+	
+	private List<User> users;
+	public UserService() {
+		
+	 users=new ArrayList<>();
+	users.add(new User("rohan","123",false));
+	users.add(new User("mohan","423",true));
+	users.add(new User("sohan","923",true));
+	users.add(new User("majrul","823",false));
+	
+	}
+	
+	public boolean isValidUser(String username,String password){
+		for(User ip:users){
+			System.out.println(username);
+		if(ip.getUsername().contains(username) ){
+			
+			if(ip.getPassword().equals(password) ){
+			System.out.println("username in valid");
+			return true;
+			}
+		  }
+		else{
+			return false;
+		}
+		}
+		return true;
+		
+	}
+	
+	
+}

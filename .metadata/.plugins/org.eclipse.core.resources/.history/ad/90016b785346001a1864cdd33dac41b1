@@ -1,0 +1,13 @@
+class Parent {
+	
+	{ System.out.print(“1”);  }
+
+	public Parent(String greeting) { 
+		System.out.print(“2”); 
+		}}
+
+class Child extends Parent {
+	
+	static {  System.out.print(“3”); }
+	{  System.out.print(“4”);  }
+}

@@ -1,0 +1,15 @@
+package com.lti;
+
+
+public class Calculator {
+	
+	public int add(int x,int y) {
+		return x+y;
+		
+	}
+	public int sub(int x,int y) {
+		return x-y;
+	}
+	C:\Program Files\Java\jdk1.8.0_231\bin
+
+}

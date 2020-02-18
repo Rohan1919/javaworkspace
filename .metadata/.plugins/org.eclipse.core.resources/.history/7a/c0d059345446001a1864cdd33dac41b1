@@ -1,0 +1,33 @@
+package date;
+
+
+
+class Parent {
+	public Parent() {
+		// TODO Auto-generated constructor stub
+	}
+	{ System.out.print("1");  }
+
+	public Parent(String greeting) { 
+		System.out.print("2"); 
+		}
+	}
+
+class Child extends Parent {
+	
+	
+	public Child() {
+		super();
+		
+	}
+	static {
+		System.out.print("3"); 
+		}
+	
+  	{  
+		System.out.print("4"); 
+		}
+	public static void main(String[] args) {
+		new Child();
+	}
+}

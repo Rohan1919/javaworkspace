@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;mywebapp/src/com.lti.servlet&apos;&#x0D;&#x0A;- Original project: &apos;Rohan&apos;s_Empire&apos;&#x0D;&#x0A;- Destination element: &apos;mywebapp/src/com.lti.servlet&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     collection.UserService.java&#x0D;&#x0A;     collection.User.java&#x0D;&#x0A;     collection.UserManager.java" description="Copy compilation units" destination="=mywebapp/src&lt;com.lti.servlet" element1="/src&lt;collection{UserService.java" element2="/src&lt;collection{User.java" element3="/src&lt;collection{UserManager.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1579762285022" units="3" version="1.0"/>
+</session>

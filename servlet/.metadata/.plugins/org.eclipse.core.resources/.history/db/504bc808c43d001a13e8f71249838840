@@ -1,0 +1,64 @@
+package com.lti.login;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class UserService {
+	
+	private List<User> users;
+	public UserService() {
+		
+	 users=new ArrayList<>();
+	users.add(new User("rohan","123",false));
+	users.add(new User("mohan","423",true));
+	users.add(new User("sohan","923",true));
+	users.add(new User("majrul","823",false));
+	
+	}
+	
+	public boolean isValidUser(String username,String password){
+		for(User ip:users){
+			System.out.println(username);
+		if(ip.getUsername().equals(username) ){
+			
+			if(ip.getPassword().equals(password) ){
+			System.out.println("username in valid");
+			return true;
+			}
+		  }
+		else{
+			return false;
+		}
+		}
+		return true;
+		
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((users == null) ? 0 : users.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		UserService other = (UserService) obj;
+		if (users == null) {
+			if (other.users != null)
+				return false;
+		} else if (!users.equals(other.users))
+			return false;
+		return true;
+	}
+	
+	
+}

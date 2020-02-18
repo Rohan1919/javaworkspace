@@ -1,0 +1,33 @@
+ackage com.lti.login;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Scanner;
+
+public class UserManager {
+	
+	private Map<String,String> users;
+	public UserManager() {
+		
+		users=new HashMap<>();
+		users.put("rohan", "123");
+		users.put("mohan", "423");
+		users.put("sohan", "923");
+		users.put("majrul", "823");
+	
+	}
+	public boolean isValidUser(String username,String password){
+		if(users.containsKey(username)){
+		    if( users.get(username).equals(password)){
+			     return true;
+		     }
+		    else{
+			     return false;
+		     }
+		}else{
+			return false;
+		}
+		
+	}
+}

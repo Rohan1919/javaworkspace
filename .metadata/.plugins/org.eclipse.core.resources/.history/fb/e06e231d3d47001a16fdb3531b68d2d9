@@ -1,0 +1,17 @@
+package com.lti.entity;
+
+import java.time.LocalDate;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="TBL_EMP")
+public class Employee {
+	
+	private int psno;
+	private String name;
+	private LocalDate dateOfJoining;
+	private double salary;
+
+}

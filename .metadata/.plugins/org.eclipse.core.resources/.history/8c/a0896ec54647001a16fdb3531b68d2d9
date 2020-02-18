@@ -1,0 +1,17 @@
+package com.lti.dao;
+
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import com.lti.entity.Employee;
+
+public class EmployeeDao {
+	
+	public void add(Employee emp) {
+		//we will take help of Orm (Hibernate) to insert employee data in db 
+		// step1: Create/Load EntityManagerFactory object
+		//During this step,META-INF/persistance.xml file will be read
+		//please check the <persistent-unit name="?" and mention the same below
+		EntityManagerFactory emf=Persistence.createEntityManagerFactory("hibernate-demo");
+	}
+}

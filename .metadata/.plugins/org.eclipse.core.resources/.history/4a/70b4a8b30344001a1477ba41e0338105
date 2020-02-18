@@ -1,0 +1,13 @@
+package date;
+
+import java.time.LocalTime;
+import java.util.Calendar;
+
+public class HelloDate {
+	public static void main(String args[])
+	{   
+		TimeCal c=new TimeCal();
+		c.Name("rohan");
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.lti.entity;
+
+import java.time.LocalDate;
+
+public class Employee {
+	
+	private int psno;
+	private String name;
+	private LocalDate dateOfJoining;
+	private double salary;
+
+}
